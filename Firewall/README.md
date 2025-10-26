@@ -51,3 +51,7 @@ To adapt these rules for your own environment, you would need to modify the foll
     ```bash
     sudo ufw reload
     ```
+4.  **Status check** to verify the new rules:
+    ```bash
+    sudo ufw status
+    ```
