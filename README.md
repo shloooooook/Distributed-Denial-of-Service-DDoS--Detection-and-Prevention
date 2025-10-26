@@ -80,7 +80,7 @@ This project is divided into three main folders, each containing a self-containe
 ### [1. Custom Firewall Approach](./Firewall/)
 This approach uses `iptables` rules to create a stateful firewall that identifies and blocks common DDoS patterns like SYN floods.
 
-* **Tech Stack:** Netfilter/iptables, Linux Networking
+* **Tech Stack:** Netfilter/iptables, Linux Networking, Stacer
 * **Go to this folder for setup and execution instructions.**
 
 ### [2. Machine Learning Approach](./Machine-Learning/)
