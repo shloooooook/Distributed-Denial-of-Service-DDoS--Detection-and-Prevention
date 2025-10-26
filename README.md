@@ -69,7 +69,7 @@ This approach offloads the detection logic to hardware for line-rate processing 
 > * **Top Window (Attacker):** The `hping3` tool is used to launch a SYN flood attack against the FPGA board.
 > * **Bottom Window (FPGA Detector):** The PYNQ-based system running on the Kria KV260 board instantly detects the incoming SYN packets, increments a counter, and raises an alert (`Possible SYN flood attack!`) once a threshold is exceeded. This proves the viability of real-time, hardware-accelerated DDoS detection.
 >
-> ![Live FPGA Detection](results/Basic%20detection.jpg)
+> ![Live FPGA Detection](results/Basic detection.jpg)
 
 ---
 
