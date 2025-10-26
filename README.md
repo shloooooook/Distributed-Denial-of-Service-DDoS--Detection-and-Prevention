@@ -29,11 +29,11 @@ The firewall's primary role is to protect the server from being overwhelmed by t
 
 > **Idle Network State:** This is the baseline performance of the server under normal conditions, with minimal network traffic.
 >
-> ![Idle Network Traffic](idle_network.png)
+> ![Idle Network Traffic](results/idle_network.png)
 >
 > **Network Under SYN Flood Attack:** This graph shows the same server during a simulated SYN flood attack. The massive spike in **upload traffic (red line)** is the server attempting to send SYN-ACK responses to thousands of spoofed IP addresses, quickly consuming its bandwidth and resources. The goal of our custom firewall rules is to prevent this scenario.
 >
-> ![Network Under Attack](network_under_attack.png)
+> ![Network Under Attack](results/network_under_attack.png)
 
 ---
 
@@ -43,7 +43,7 @@ This approach focused on building a highly accurate and reliable classifier. Aft
 
 > **Optimal Threshold Analysis:** This graph shows how we determined the optimal decision threshold for our model. The threshold of **0.09** provides the best balance between Precision (correctly identifying attacks) and Recall (catching as many attacks as possible), maximizing the F1-Score.
 >
-> ![Precision-Recall Curve](graph.png)
+> ![Precision-Recall Curve](results/graph.png)
 >
 > **Final Confusion Matrix:** The final model, using the optimal threshold, is exceptionally accurate. The results on the test set show:
 > * **True Negatives (Benign):** 6,066 samples correctly identified as benign.
@@ -53,7 +53,7 @@ This approach focused on building a highly accurate and reliable classifier. Aft
 >
 > This demonstrates a highly reliable model suitable for deployment.
 >
-> ![Final Confusion Matrix](conf2.png)
+> ![Final Confusion Matrix](results/conf2.png)
 
 ---
 
@@ -63,13 +63,13 @@ This approach offloads the detection logic to hardware for line-rate processing 
 
 > **Hardware Architecture:** This is the block diagram of our detection system, designed in Xilinx Vivado. The core of the system is the **Zynq UltraScale+ MPSoC**, which processes incoming network packets. Our custom `syn_v1.0` IP block is responsible for identifying SYN packets.
 >
-> ![Vivado Block Diagram](HW_Vivado_BD.png)
+> ![Vivado Block Diagram](results/HW_Vivado_BD.png)
 >
 > **Live Attack Detection:** This screenshot demonstrates the system in action.
 > * **Top Window (Attacker):** The `hping3` tool is used to launch a SYN flood attack against the FPGA board.
 > * **Bottom Window (FPGA Detector):** The PYNQ-based system running on the Kria KV260 board instantly detects the incoming SYN packets, increments a counter, and raises an alert (`Possible SYN flood attack!`) once a threshold is exceeded. This proves the viability of real-time, hardware-accelerated DDoS detection.
 >
-> ![Live FPGA Detection](Basic%20detection.jpg)
+> ![Live FPGA Detection](results/Basic%20detection.jpg)
 
 ---
 
