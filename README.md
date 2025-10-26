@@ -83,13 +83,13 @@ This approach uses `iptables` rules to create a stateful firewall that identifie
 * **Tech Stack:** Netfilter/iptables, Linux Networking
 * **Go to this folder for setup and execution instructions.**
 
-### [2. Machine Learning Approach](./Machine%20Learning/)
+### [2. Machine Learning Approach](./Machine-Learning/)
 This approach uses a machine learning model to classify network traffic as either benign or malicious.
 
 * **Tech Stack:** Python, Scikit-learn, Pandas, Imbalanced-learn, Matplotlib
 * **Go to this folder for setup and execution instructions.**
 
-### [3. FPGA Hardware Acceleration Approach](./Kria%20KV260%20FPGA/)
+### [3. FPGA Hardware Acceleration Approach](./Kria-KV260-FPGA/)
 This approach offloads the detection logic to a Xilinx Kria KV260 FPGA for high-throughput, low-latency packet analysis.
 
 * **Tech Stack:** PYNQ, Xilinx Vivado, Verilog/HLS
