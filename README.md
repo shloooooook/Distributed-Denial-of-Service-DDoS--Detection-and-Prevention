@@ -1,4 +1,4 @@
-# DDoS Detection and Mitigation System
+# Distributed Denial of Service (DDoS) Detection and Mitigation System
 
 This repository contains the source code for my final year project, which explores three distinct approaches for detecting and mitigating Distributed Denial of Service (DDoS) attacks.
 
@@ -34,7 +34,6 @@ This approach offloads the detection logic to a Xilinx Kria KV260 FPGA for high-
 ---
 
 ## 👥 Team Members
-* [Shlok Yadav]
-* [Prachi Sankhe]
-* [Ayeshna Singh]# Distributed-Denial-of-Service-DDoS--Detection-and-Prevention
-# Distributed-Denial-of-Service-DDoS--Detection-and-Prevention
+* Shlok Yadav
+* Prachi Sankhe
+* Ayeshna Singh
