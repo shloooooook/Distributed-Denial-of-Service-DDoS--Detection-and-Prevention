@@ -1,0 +1,19 @@
+# Python virtual environment
+ddos_env/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Large data and model files (use Git LFS for these if needed)
+*.h5
+*.keras
+*.pkl
+*.bit
+*.zip
+*.csv
+
+# IDE and OS specific files
+.vscode/
+.idea/
+*.DS_Store
