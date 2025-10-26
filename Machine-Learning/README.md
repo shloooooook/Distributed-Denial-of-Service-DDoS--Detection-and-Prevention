@@ -74,7 +74,7 @@ The classification report and confusion matrix from the final model show a highl
     ```
 2.  **Set up a Python virtual environment and activate it.**
     ```bash
-    python3 -m venv venv
+    python3 -m venv ddos_env
     source venv/bin/activate
     ```
 3.  **Install dependencies.**
