@@ -69,7 +69,7 @@ The classification report and confusion matrix from the final model show a highl
 
 1.  **Clone the repository.**
     ```bash
-    git clone [https://github.com/shloooooook/Distributed-Denial-of-Service-DDoS--Detection-and-Prevention.git](https://github.com/shloooooook/ Distributed-Denial-of-Service-DDoS--Detection-and-Prevention
+    git clone [https://github.com/shloooooook/Distributed-Denial-of-Service-DDoS-Detection-and-Prevention.git](https://github.com/shloooooook/Distributed-Denial-of-Service-DDoS--Detection-and-Prevention
 .git)
     cd Distributed-Denial-of-Service-DDoS--Detection-and-Prevention.git
     ```
