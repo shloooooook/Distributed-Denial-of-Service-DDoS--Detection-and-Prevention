@@ -15,8 +15,5 @@ This directory contains the files related to the real-time DDoS detection system
     * If a packet is a TCP packet with only the SYN flag set (`pkt[TCP].flags == "S"`), it's identified as a potential attack packet and a counter (`syn_count`) is incremented.
     * If the counter exceeds a defined `SYN_THRESHOLD`, an alert is printed to the console, indicating a likely SYN flood attack.
 
-## 🚀 How to Run
-
 ### Dependencies
-This script requires the `scapy` library. You can install it on your Kria board (or any Linux system with `pip`) from the requirements.txt file 
-> ![Requirements.txt](requirements.txt)
+This script requires the `scapy` library. You can install it on your Kria board (or any Linux system with `pip`) from the requirements.txt file located in the root directory. 
